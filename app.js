@@ -44,3 +44,15 @@ function checkOddEven(num) {
 }
 
 console.log(checkOddEven(7));
+
+// Determine if a number is prime
+function checkPrime(num) {
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            return "Not Prime";
+        }
+    }
+    return "Prime";
+}
+
+console.log(checkPrime(13));
